@@ -1,0 +1,90 @@
+# import urllib.request
+# from bs4 import BeautifulSoup
+
+# url='https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=0&acr=8&acq=%EC%BD%94%EB%A1%9C%EB%82%98&qdt=0&ie=utf8&query=%EC%BD%94%EB%A1%9C%EB%82%98'
+# html=urllib.request.urlopen(url).read()
+# soup=BeautifulSoup(html,'html.parser')
+
+# print(soup)
+
+# import urllib.request
+# from bs4 import BeautifulSoup
+
+# url='https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=0&acr=8&acq=%EC%BD%94%EB%A1%9C%EB%82%98&qdt=0&ie=utf8&query=%EC%BD%94%EB%A1%9C%EB%82%98'
+# html=urllib.request.urlopen(url).read()
+# soup=BeautifulSoup(html,'html.parser')
+# title=soup.find_all(class_='코로나_tit')
+# print(title)
+
+
+
+# import urllib.request
+# import urllib.parse
+# from bs4 import BeautifulSoup
+
+# news_url='https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query='
+# search=input('기사 검색어:')
+# url=news_url + urllib.parse.quote_plus(search)
+# html=urllib.request.urlopen(url).read()
+
+# soup=BeautifulSoup(html,'html.parser')
+# title=soup.find_all(class_='news_tit')
+# for i in title:
+#     print(i.attrs['title'])
+#     print(i.attrs['href'])
+#     print()
+
+
+# from google_images_download import google_images_download
+# response = google_images_download.googleimagesdownload()
+# arguments = {
+#     'keywords':'코로나',
+#     'limit':5,
+#     'format':'png'}
+# paths = response.download(arguments)
+# print(paths)
+
+
+# from pickle import STOP
+# from tracemalloc import start, stop
+# import RPi.GPIO as GPIO
+# import time
+# SERVO_PIN = 20
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# TRIG = 23
+# ECHO = 24
+# print('Distance measurement in progress')
+# GPIO.setup(TRIG,GPIO.OUT)
+# GPIO.setup(ECHO,GPIO.IN)
+# GPIO.output(TRIG,False)
+# print('Waiting for sensor to settle')
+# time.sleep(2)
+# GPIO.setup(SERVO_PIN,GPIO.OUT)
+# servo = GPIO.PWM(SERVO_PIN,50)
+# servo.start(0)
+# try:
+#     while True:
+#         GPIO.output(TRIG,True)
+#         time.sleep(0.00001)
+#         GPIO.output(TRIG,False)
+
+#         while GPIO.input(ECHO)==0:
+#             start = time.time()
+#         while GPIO.input(ECHO)==1:
+#             stop = time.time()
+
+#         check_time = stop - start
+#         distance = check_time*34300/2
+#         print('Distance:%.1fcm'%distance)
+#         time.sleep(0.4)
+
+#         if distance <= 10:
+#             servo.ChangeDutyCycle(7.5)
+#         else:
+#             servo.ChangeDutyCycle(2.5)
+
+# except KeyboardInterrupt:
+#     print('Measurement stopped by User')
+#     servo.stop()
+#     GPIO.cleanup
