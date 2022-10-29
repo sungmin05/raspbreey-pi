@@ -1,0 +1,107 @@
+# print('짝수와 홀수를 알려줘요.')
+# num=int(input('숫자를 입력하세요.'))
+# div = num%2
+# if div==0:
+#     print('짝수입니다.')
+# if div==1:
+#     print('홀수입니다.')
+
+# print('방문을 환영합니다.')
+# id=input('아이디를 입력하세요.:')
+# if id=="코드":
+#     print('입장하세요.')
+# elif id!="코드":
+#     print('입장할수 어ㅄ습니다.')
+
+# print('<신나는 롤러코스터 입니다.>')
+# print()
+# 키=float(input('당신의 키는?(cm):'))
+# if 키>=150:
+#     print('탑승이 가능합니다.')
+# elif 키<150:
+#     print('탑승이 불가합니다.')
+
+# print('게임을 설치 하시겠습니까?')
+# print()
+# 나이=float(input('나이를 적으세요:'))
+# if 나이>15:
+#     print('설치가 가능합니다')
+# if 나이<=15:
+#     print('설치가 불가능합니다.')
+
+# print("학교홈페이지에 오신 것을 환영합니다.")
+# print()
+# id=input('ID:')
+# pw=input('password:')
+# print()
+# if(id=='김코드')and(pw=='0110'):
+#     print('방문을 환영합니다.')
+# if(id!='김코드')and(pw!='0110'):
+#     print('아이디와 패스워드를 확인해주세요.')
+# elif id != '김코드':
+#     print('아이디를 확인하세요.')
+# elif pw != '0110':
+#     print('패스워드를 확인하세요.')
+
+# print('<정수 또는 실수인 두자리이상의 수를 입력하시오.>')
+# print()
+# 첫수=float(input('첫번째수를 입력하시오.:'))
+# 두수=float(input('두번째수를 입력하시오.:'))
+# 연산=input("어떤식을 사용하시겟습니까?(+,-,*,/):")
+# if 연산=='+':
+#     print(첫수+두수)
+# elif 연산=='-':
+#     print(첫수-두수)
+# elif 연산=='*':
+#     print(첫수*두수)
+# elif 연산=='/':
+#     print(round(첫수/두수,2))
+
+# print('쇼핑몰입니다.')
+# 성별=input('남자/여자:')
+# 종류=input('정장/캐주얼:')
+# if 성별=='남자':
+#     if 종류=='정장':
+#         print('3층 별관매장으로 가세요.')
+#     else:
+#         print('3층 본관매장으로 가세요.')
+# else:
+#     print('4층본관매장으로 가세요.')
+
+# mw=input('성별을 입력하세요. 남/여:')
+# tall=float(input('키를 입력하세요.'))
+# kg=float(input('몸무게를 입력하세요'))
+
+# if mw=='남':
+#     m=tall*tall*22
+#     m_standard=(kg-m)/m*100
+#     if m_standard <-10:
+#         print('저체중입니다.')
+#     elif -10< m_standard <10:
+#         print('정상체중 입니다.')
+#     elif 10<m_standard<20:
+#         print('과체중입니다.')
+#     elif 20<m_standard:
+#         print('비만입니다.')
+# if mw=='여':
+#     w=tall*tall*21
+#     w_standard=(kg-w)/w*100
+#     if w_standard < -10:
+#         print('저체중 입니다.')
+#     if -10<= w_standard <=10:
+#         print('정상체중 입니다.')
+#     if 10<=w_standard<=20:
+#         print('과체중입니다.')
+#     if 20<=w_standard:
+#         print('비만입니다.')
+
+import random
+ai=random.choice(['가위','바위','보'])
+print('10개의 계단이 있습니다.ai와 승리해 계단을 오르십시오.')
+hm=input('가위,바위,보:')
+if (ai=='가위') and (hm=='가위') or (ai=='바위') and (hm=='바위') or (ai=='보') and (hm=='보'):
+    print('인공지능이 %s를 냈습니다. 비겼습니다.'% ai)
+elif (ai=='가위') and (hm=='보')or(ai=='바위') and (hm=='가위')or(ai=='보') and (hm=='주먹'):
+    print('인공지능이 %s를 냈습니다. 졋겼습니다. 한칸 내려가니다.'% ai)
+elif (ai=='가위') and (hm=='주먹')or(ai=='주먹') and (hm=='보')or(ai=='보') and (hm=='가위'):
+    print('인공지능이 %s를 냇습니다. 이겼습니다. 2칸 올라가니다.'% ai)
