@@ -1,0 +1,197 @@
+# num = {1:'김코딩',2:'이스쿨',3:'박로봇'}
+# a={}
+# print(a)
+
+# b={'김코딩':30,'이스쿨':24}
+# print(b)
+
+# c=dict(name='김코딩',city='seoul')
+# print(c)
+
+# b=['김코딩']
+# print(b)
+
+# b.get=('이스쿨')
+# print(b.get)
+
+# c[name]='최코스'
+
+# inf = {
+# 'name':'김코딩',
+# 'city':'seoul',
+# 'age':30
+# }
+# print(inf['age'])
+
+# inf = dict(
+#     name = '김코딩',
+#     city = 'seoul',
+#     age = 30
+# )
+# print(inf['city'])
+
+# local = {1:'서울',2:'대전',3:'대구'}
+# local[4] = '광주'
+# print(local)
+
+# id = {'나이':25,'키':175,'몸무게':70}
+# del id['몸무게']
+# print(id)
+
+# temp = {'서울':29,'대전':30,'대구':32}
+# print(temp)
+# temp['대전']=29
+# print(temp)
+
+# stu = {'김코딩':'서울','박로봇':'대전'}
+# print(stu)
+# print('김코딩'in stu)
+# print('이스쿨'in stu)
+
+# id = {
+# 'Name':'김코딩',
+# 'City':'Seoul',
+# 'Age':30,
+# 'Grade':'A',
+# 'Phone':'010-1234-1234',
+# 'Status':True
+# }
+# print(id.keys())
+
+# print(id.values())
+
+# weather = {
+# '서울':'23도',
+# '대전':'24도',
+# '대구':'26도',
+# '부산':'24도',
+# '광주':'25도'
+# }
+# print('서울,대전,대구,부산,광주')
+# city=input('날씨를 알고싶은 도시를 쓰세요:')
+# for i in weather:
+#     if i in city:
+#         print (city + '는 현재'+ weather[city]+'입니다.')
+#         break
+# if i not in city:
+#         print('입력하신 도시의 정보는 없습니다.')
+
+# if i not in city:
+#         print('입력하신 도시의 정보는 없습니다.')
+
+
+
+# 도시={'서울':'대한민국 수도입니다',
+#         '광주':'정읍시 밑에 있습니다',
+#         '군산':'전라북도 전주옆에 있습니다',
+#         '세종':'청주시 밑에 있습니다.',
+#         '여수':'전라남도에 있습니다,'}
+# while True:
+#         이름=input('사용자의 이름을 설정해 주세요:')
+#         name=input('챗봇의 이름을 설정해주세요:')
+#         city=str(input('%s:위치를 알고싶은 도시를 쓰세요.'%name))
+#         print('%s:%s를 알고싶습니다.'%(이름,city))
+#         break
+# for i in 도시:
+#         if i in city:
+#                print (city + '은(는) 현재'+ 도시[city])
+#                break
+#         elif i not in city:
+#                 print('입력하신 도시의 정보는 없습니다.')
+#                 continue
+
+
+# human_name = input('당신의 이름은?')
+# bot_name = 'AI'
+# qna_dict = {
+# "안녕":"안녕하세요.^^",
+# "이름":"제 이은 AI 입니다.",
+# "기분":"저도 기분이 좋아요~!",
+# "음악":"저는 방탄소년단이 좋아요."
+# }
+
+# while True:
+#         talk=input("%s : "%human_name)
+#         for qna in qna_dict:
+#                 if qna in talk:
+#                         print("%s : %s\n" %(bot_name, qna_dict[qna]))
+#                         break
+#         if qna not in talk:
+#                 print('죄송해요. 답변을 준비하도록 할게요.\n')
+                # continue
+
+
+
+# bot=input('봇의 이름을 설정하여 주십시오.')
+# name=input('당신의 이름을 쓰시오.')
+# buy={
+# "냉장고":"냉장고 코너로 가시죠!",
+# "핸드폰":"핸드폰 코너로 가시죠!",
+# "티비":"티비 코너로 가시죠!",
+# "전자레인지":"전자레인지 코너로 가시죠"
+# }
+# As={
+# "냉장고":"냉장고 어디가 고장 났나요?",
+# "핸드폰":"핸드폰 어디가 고장났나요?",
+# "티비":"티비 어디가 고장났나요?",
+# "전자레인지":"전자레인지 어디가 고장인가요?"
+# }
+# 문의={
+# "냉장고":"냉장고의 어떤것이 궁금하신가요?",
+# "핸드폰":"핸드폰의 어떤것이 궁금하신가요?",
+# "티비":"티비의 어떤것이 궁금하신가요?",
+# "전자레인지":"전자레인지 어떤것이 궁금하신가요?"
+# }
+# 일=input('%s:무슨일로 오셨나요?(사러,As,문의):'%bot)
+# while True:
+#         talk=input("%s : "%name)
+#         for i in As:
+#                 if i in talk:
+#                         print("%s : %s" %(bot, As[i]))
+#                         break 
+#         for i in buy:
+#                 if i in talk:
+#                         print("%s : %s" %(bot, buy[i]))
+#                         break
+#         for i in 문의:
+#                 if i in talk:
+#                         print("%s : %s" %(bot, 문의[i]))
+#                         break 
+#         if i not in talk:
+#                 print('죄송합니다.그 제품은 없습니다^^.')
+#                 #continue
+
+
+
+# AI = 'SE'
+# human = input('당신의 이름:')
+# product_dict = {
+# '핸드폰':'핸드폰 안내입니다.\t구매/수리/문의',
+# '냉장고':'냉장고 안내입니다.\t구매/수리/문의',
+# 'TV':'TV안내입니다.\t구매/수리/문의',
+# }
+
+# qna_dict = {
+# '구매':'가까운 디지털 프라자를 입력하세요',
+# '수리':'증상을 메모해서 가까운 AS센터로 보내주세요.',
+# '문의':'상담원과 연결을 하겠습니다.'
+# }
+
+# while True:
+#         print('SE 입니다. 가전제품을 입력하세요.')
+#         talk1 = input('%s :'%human)
+#         for qna1 in product_dict:
+#                 if qna1 in talk1:
+#                         print('%s:%s'%(AI,product_dict[qna1]))
+#                         talk2 = input('%s:'%human)
+#                         for qna2 in qna_dict:
+#                                 if qna2 in talk2:
+#                                         print('%s:%s'%(AI,qna_dict[qna2]))
+#                                         break
+#                         if qna2 not in talk2:
+#                                 print('없는 질문입니다. 상담원으로 통해 답변 받으세요.')
+#                                 break
+#                 continue
+#         if qna1 not in talk1:
+#                 print('제품 분류를 다시 입력해 주세요.')
+#                 continue
