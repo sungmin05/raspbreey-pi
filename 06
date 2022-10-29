@@ -1,0 +1,332 @@
+# def total(a,b):
+#     c=a+b
+#     return c
+# print(total(5,6))
+
+
+# def avg(title1,title2,title3):
+#     total=(title1+title2+title3)/3
+#     return total
+
+# num1=int(input('국어점수:'))
+# num2=int(input('수학점수:'))
+# num3=int(input('과학점수:'))
+
+# score=avg(num1,num2,num3)
+# print("입력한 과목의 평윤은:%d"%score)
+
+
+# def avg(cm1,cm2,cm3):
+#     total=(cm1*cm2*cm3)
+#     return total
+
+# m1=int(input('가로길이:'))
+# m2=int(input('세로길이:'))
+# m3=int(input('높이길이:'))
+
+# score=avg(m1,m2,m3)
+# print('입력하신 과목의 평균은:%d'%score)
+
+
+# def tall(m):
+#     if m>=120:
+#         return '탑승이 가능합니다.'
+#     elif m<120:
+#         return '탑승이 불가능합니다.'
+# stand=int(input('당신의 키:'))
+# print(tall(stand))
+
+
+# def ban(c):
+#     if c==1:
+#         return '1학년은 1층입니다.'
+#     elif c==2 :
+#         return '2학년은 1층입니다.'
+#     elif c==3:
+#         return '3학년은 2층입니다.'
+#     elif c==4:
+#         return '4학년은 2층입니다.'
+#     elif c==5:
+#         return '5학년은 3층입니다.'
+#     elif c==6:
+#         return '6학년은 3층입니다.'
+# stand=int(input('몇학년 인가요?:'))
+# print(ban(stand))
+
+
+# def sum(i,j):
+#     num=0
+#     for i in range(i,j+1):
+#         num+=i
+#     return num
+
+# print(sum(1,10))
+# print(sum(1,100))
+# print(sum(1,1000))
+
+
+# def sum(num):
+#     for i in range(1,10):
+#         print('%d*%d=%d'%(num,i,num*i))
+#     return
+# sum(int(input('알고싶은 구구단의 수:')))
+
+# import random
+# def ran():
+#     return random.randint(1,6)
+# print('주사위 %d가 나왔습니다.'%ran())
+
+# def star(p1,p2):
+#     print('저는 연예인 %s(와)과 %s(을)를 좋아합니다.'%(p1,p2))
+# star(김수현,전지현)
+# star(유재석,이효리)
+
+# a=1
+# def fun():
+#     a=10
+#     return a
+# print(fun())
+# print(a)
+
+# choice=input('(사이다/콜라/물):')
+# num=int(input('개수를 입력하세요:'))
+# def 음료수(drink,price):
+#     if drink=='사이다':
+#         print('사이다%d개,'%price, end='')
+#         return 1000*price
+#     elif drink=='콜라':
+#         print('콜라%d개,'%price, end='')
+#         return 1200*price
+#     elif drink=='물':
+#         print('물%d개,'%price, end='')
+#         return 500*price
+# print(str(음료수(choice,num))+'원 입니다.')
+
+
+# print('[메뉴')
+# print('핫도그:3000원')
+# print('라면:2500원')
+# print('햄버거:4500원')
+# print('콜라:1500원')
+# print('사이다:1500원')
+# choice=input('어떤음식을 주문하시겠습니까?(종료=x):')
+# num=int(input('몇개주문하시겠습니까?:'))
+# def 음식(food,price):
+#     if food =='핫도그':
+#         print('핫도그%d개,'%price, end='')
+#         return 3000*price
+
+#     elif food =='라면':
+#         print('라면%d개,'%price, end='')
+#         return 2500*price
+
+#     elif food =='햄버거':
+#         print('햄버거%d개,'%price, end='')
+#         return 4500*price
+
+#     elif food =='콜라':
+#         print('콜라%d개,'%price, end='')
+#         return 1500*price
+
+#     elif food =='사이다':
+#         print('사이다%d개,'%price, end='')
+#         return 1500*price
+
+#     elif food == 'x':
+#         print('주문을 취소합니다.')
+
+# print(str(음식(choice,num))+'원 입니다.')
+# print('(카드/현금)')
+# oo=input('어떤 결제방식을 사용하시겠습니까?:')
+# if oo == '카드':
+#     print('카드를 단말기에 꽂아 주십시오.')
+# elif oo == '현금':
+#    print('현금을 넣어주십시오.')
+   
+
+# def food(menu,num):
+#     if menu=='김치볶음밥':
+#         print('김치볶음밥 %d개 주문'%num)
+#         return 4000*num
+#     elif menu=='오므라이스':
+#         print('오므라이스 %d개 주문'%num)
+#         return 4500*num
+#     elif menu=='짜장면':
+#         print('짜장면 %d개 주문'%num)
+#         return 3500*num
+#     elif menu=='짬뽕':
+#         print('짬뽕 %d개 주문'%num)
+#         return 4000*num
+#     elif menu=='돈가스':
+#         print('돈가스 %d개 주문'%num)
+#         return 5000*num
+# total=0
+
+# while True:
+#     print('[메뉴]')
+#     print('김치볶음밥 : 4000원')
+#     print('오므라이스 : 4500원')
+#     print('짜장면 : 3500원')
+#     print('짬뽕 : 4000원')
+#     print('돈가스 : 5000원')
+#     choice = input('메뉴를 고르세요.(종료=X):')
+#     if choice == 'X':
+#         money=int(input('결제할 금액을 입력하세요.:'))
+#         break
+#     number = int(input('갯수:'))
+#     total = total + food(choice,number)
+# print('계산하실 금액은 %d원 입니다. 잔돈은 %d원입니다.'%(total,money-total))
+
+
+# def food(menu,num):
+#     if menu=='김치볶음밥':
+#         print('김치볶음밥 %d개 주문'%num)
+#         return 4000*num
+#     elif menu=='오므라이스':
+#         print('오므라이스 %d개 주문'%num)
+#         return 4500*num
+#     elif menu=='짜장면':
+#         print('짜장면 %d개 주문'%num)
+#         return 3500*num
+#     elif menu=='짬뽕':
+#         print('짬뽕 %d개 주문'%num)
+#         return 4000*num
+#     elif menu=='돈가스':
+#         print('돈가스 %d개 주문'%num)
+#         return 5000*num
+# total=0
+
+# while True:
+#     print('[메뉴]')
+#     print('김치볶음밥 : 4000원')
+#     print('오므라이스 : 4500원')
+#     print('짜장면 : 3500원')
+#     print('짬뽕 : 4000원')
+#     print('돈가스 : 5000원')
+#     choice = input('메뉴를 고르세요.(종료=X):')
+#     if choice == 'X':
+#         money=int(input('결제할 금액을 입력하세요.:'))
+#         break
+#     number = int(input('갯수:'))
+#     total = total + (choice,number)
+# print('계산하실 금액은 %d원 입니다. 잔돈은 %d원입니다.'%(total,money-total))
+
+
+# score=int(input('점수를 입력하세요:'))
+
+# if score >= 90:
+#     grade='A'
+#     msg='장학금 100만원이 지급됩니다.'
+
+# elif score >= 80:
+#     grade='B'
+#     msg='장학급 50만원이 지급됩니다.'
+
+# elif score >= 70:
+#     grade='C'
+#     msg='장학급 대상이 아닙니다.'
+
+# elif score >= 60:
+#     grade='D'
+#     msg='장학금 대상이 아닙니다.'
+
+# else:
+#     grade='F'
+#     msg='낙제입니다 재수 하세요.'
+
+# print(grade+'학점입니다.')
+# print(msg)
+
+
+# num=int(input('정수를 입력하세요.'))
+# if num>0:
+#     print('양수입니다.')
+# elif num==0:
+#     print('0입니다.')
+# else:
+#     print('음수입니다.')
+
+
+# num=int(input('정수를 입력하세요.'))
+# if num%2==0:
+#     print('짝수입니다.')
+# elif num%2==1:
+#     print('홀수입니다.')
+
+
+# num1=int(input('첫째 숫자:'))
+# num2=int(input('둘째 숫자:'))
+# num3=int(input('셋째 숫자:'))
+# if (num1>=num2)and(num1>=num3):
+#     lar=num1
+# elif (num2>=num1)and(num2>=num3):
+#     lar=num2
+# else:
+#     lar=num3
+# print('제일 큰 숫자 = ',lar)
+
+
+# year=int(input('년도를 입력하세요:'))
+# if (year%4==0 and year%100!=0) or (year%400==0):
+#     print('윤년입니다.')
+# else:
+#     print('윤년이 아닙니다.')
+
+
+
+# voice=int(input('음성 통화 시(분)을 입력하세요.'))
+# messge=int(input('문자 전송 건수를 입력하세요'))
+# data=int(input('데이터 사용량(MB)을 입력 하세요.'))
+
+# V_over=voice-100
+# C_over = messge-200
+# d_over=data-300
+
+# if V_over<0:
+#     V_pay=0
+# elif V_over<=50:
+#     V_pay=V_over*60*1.56
+# elif V_over<=100:
+#     V_pay=V_over*60*1.25
+# else:
+#     V_pay=V_over*60*1.25
+
+# if C_over<0:
+#     C_pay=0
+# else:
+#     C_pay=C_over*20
+
+# if d_over<0:
+#     d_pay=0
+# else:
+#     d_pay=d_over*55
+
+# pay=V_pay + C_pay + d_pay + 30000
+# print('음성 통화 요금:',int(V_pay))
+# print('문자 전송 요금:',C_pay)
+# print('데이터 사용 요금:',d_pay)
+# print('이번달 통신 요금:',pay)
+
+
+
+age=int(input('나이를 입력 하세요.:'))
+초대권=input("초대권이 있나요?(Y,N):")
+if age<=5 and 초대권=='N':
+    print('입장료는 5000원입니다.')
+elif age<=5 and 초대권=='Y':
+    pay=5000*0.5
+    print('입장료는%d입니다'%pay)
+elif age<=13 and 초대권=='N':
+    print('입장료는 7000원입니다.')
+elif age<=13 and 초대권=='Y':
+    pay=7000*0.7
+    print('입장료는%d입니다'%pay)
+elif age<=20 and 초대권=='N':
+    print('입장료는 9000원입니다.')
+elif age<=20 and 초대권=='Y':
+    pay=9000*0.8
+    print('입장료는%d입니다'%pay)
+elif age>21 and 초대권=='N':
+    print('입장료는 10000원입니다.')
+elif age>21 and 초대권=='Y':
+    print('입장료는 10000원입니다.')
