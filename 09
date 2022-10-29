@@ -1,0 +1,5 @@
+a=open("memo.txt","r")
+text = a.read(a)
+print(text)
+
+a.close
