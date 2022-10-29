@@ -1,0 +1,76 @@
+# import RPi.GPIO as GPIO
+# import time
+# led_pin = 4
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(led_pin,GPIO.OUT)
+
+# for i in range(10):
+#     GPIO.output(led_pin,1)
+#     time.sleep(1)
+#     GPIO.output(led_pin,0)
+#     time.sleep(1)
+# GPIO.cleanup
+
+# import RPi.GPIO as GPIO
+# import time
+# button_pin = 20
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(button_pin,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# while 1:
+#     if GPIO.input(button_pin)==GPIO.HIGH:
+#         print('hello code_studio!')
+#     time.sleep(0.1)
+
+# import RPi.GPIO as GPIO
+# import time
+# button_pin1,button_pin2,button_pin3 = 20,21,16
+# led_red,led_orange,led_green = 23,25,12
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(button_pin1,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# GPIO.setup(button_pin2,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# GPIO.setup(button_pin3,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# GPIO.setup(led_red,GPIO.OUT)
+# GPIO.setup(led_orange,GPIO.OUT)
+# GPIO.setup(led_green,GPIO.OUT)
+# while 1:
+#     if GPIO.input(button_pin3)==GPIO.HIGH:
+#         GPIO.output(led_red,1)
+
+#     elif GPIO.input(button_pin2)==GPIO.HIGH:
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,1)
+#         GPIO.output(led_green,0)
+
+#     elif GPIO.input(button_pin1)==GPIO.HIGH:
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,1)
+    
+#     else:
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,0)
+# GPIO.cleanup
+
+# while 1:
+#     if GPIO.input(button_pin)==GPIO.HIGH:
+#         print('PASS!')
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,1)
+#         GPIO.output(led_green,0)
+#         time.sleep(3)
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,1)
+#         time.sleep(10)
+#     else:
+#         print("Don't CROSS!")
+#         GPIO.output(led_red,1)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,0)
+#         time.sleep(0.1)
+
+
