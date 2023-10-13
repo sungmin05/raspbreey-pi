@@ -1,0 +1,1501 @@
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def hello():
+    return"Hello CodeStude"
+if __name__=="__main__":
+    app.run(host='0.0.0.0')
+
+
+# from flask import Flask
+# import RPi.GPIO as GPIO
+
+# app = Flask(__name__)
+
+# LED=4
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(LED,GPIO.OUT,initial =GPIO.LOW)
+
+# @app.route("/")
+# def helloworld():
+#     return "Hello COS"
+
+# @app.route("/led/on")
+# def led_on():
+#     GPIO.output(LED,GPIO.HIGH)
+#     return "LED ON"
+
+# @app.route("/led/off")
+# def led_off():
+#     GPIO.output(LED,GPIO.LOW)
+#     return "LED OFF"
+
+# @app.route("/gpio/clenup")
+# def gpio_cleanup():
+#     GPIO.cleanup()
+#     return "GPIO CLEANUP"
+
+# if __name__ =="__main__":
+#     app.run(host="0.0.0.0")
+
+
+
+# from flask import Flask
+# import RPi.GPIO as GPIO
+
+# app = Flask(__name__)
+
+# LED = 4
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(LED,GPIO.OUT,initial=GPIO.LOW)
+
+# @app.route("/")
+# def helloworld():
+#     return 'Helle COS'
+# @app.route("/led/on")
+# def led_on():
+#     GPIO.output(LED,GPIO.HIGH)
+#     return "LED ON"
+
+# @app.route("/led/off")
+# def led_of():
+#     GPIO.output(LED,GPIO.LOW)
+#     return "LED Off"
+
+# @app.route("/gpio/cleanup")
+# def gpio_cleanup():
+#     GPIO.cleanup()
+#     return 'GPIO CLEANUP'
+
+# if __name__=="__main__":
+#     app.run(host="0.0.0.0")
+
+
+
+# from flask import Flask,request
+# from flask import render_template
+# import RPi.GPIO
+ 
+
+ print('이름:고성민')
+print('사는곳:전라북도 군산시')
+print('좋아하는것:잠')
+print('잘하는것:잠')
+
+
+# text="마우스를 이용하여 클릭하세요"
+
+# print(text.replace("이용","사용"))
+
+
+# text="수리수리 마하수리, 열려라 참깨"
+# print(len(text))
+
+
+
+
+
+
+# text="수리 수리 마하수리, 열려라 참깨"
+# print(text.count("수리"))
+
+
+text="수리수리 마하수리, 열려라 참깨"
+print(text.find("마"))
+
+
+# month="9"
+# week="2"
+
+# mon='야채죽'
+# ths='호박죽'
+# wen='팥죽'
+# thu='전복죽'
+# fir='닭죽'
+
+
+# print(str(month)+"월 "str(week) +"째주 ""식단입니다")
+# print()
+# print('월요일: '+mon)
+# print('화요일: '+ths)
+# print('수요일: '+wen)
+# print('목요일: '+thu)
+# print('금요일: '+fir)
+# print()
+# print('맛있게 드세요.')
+
+
+
+
+# a=3+7
+# print(a)
+
+# a=10-4.4
+# print(a)
+
+# a=4*3
+# print(a)
+
+# a=3**2
+# print(a)
+
+# a=round(10/3,2)
+# print(a)
+
+# a=divmod(10,3)
+# print(a)
+
+# a=8
+# b=2
+# print(a+b)
+# print(a*b)
+# print(a/b)
+# print(type(a+b))
+# print(type(a*b))
+# print(type(a/b))
+
+# a=9**2
+# b=9**0.5
+# print('9의제곱:'+str(a))
+# print('9의제곱근:'+str(b))
+
+# a=7
+# a+=3
+# print(a)
+
+# print('<길이 단위를 변환해 줍니다.>')
+# print()
+# cm=float(input('바꾸고 싶은 길이를 입력하세요.cm:'))
+# print('입력하신 숫자의 m:'+str(round(cm/100,3)))
+# print('입력하신 숫자의 mm:'+str(float(cm*10)))
+
+# print('<길이변환을 해줍니다.>')
+# print()
+# cm=float(input('바꾸고싶은 길이를 선택하세요 cm:'))
+# print('입력하신 숫자의 m:'+str(round(100/cm,3)))
+# print('입력하신 숫자의 mm:'+str(float(cm*10)))
+
+# print('<환율 게산기 입니다.>')
+# print()
+# 원=float(input('한국 돈은 원단위로 입력하세요:'))
+# print('미국:'+str(round(원/1187,2))+'달러')
+# print('일본:'+str(round(원/1067,2))+'엔')
+# print('중국:'+str(round(원/184,2))+'위안')
+
+전교생=float(input('전교생:'))
+최대수=float(input('교실당 최대 학생수:'))
+print('교실수:'+str(round(전교생/최대수,1)))
+
+
+
+
+# print('짝수와 홀수를 알려줘요.')
+# num=int(input('숫자를 입력하세요.'))
+# div = num%2
+# if div==0:
+#     print('짝수입니다.')
+# if div==1:
+#     print('홀수입니다.')
+
+# print('방문을 환영합니다.')
+# id=input('아이디를 입력하세요.:')
+# if id=="코드":
+#     print('입장하세요.')
+# elif id!="코드":
+#     print('입장할수 어ㅄ습니다.')
+
+# print('<신나는 롤러코스터 입니다.>')
+# print()
+# 키=float(input('당신의 키는?(cm):'))
+# if 키>=150:
+#     print('탑승이 가능합니다.')
+# elif 키<150:
+#     print('탑승이 불가합니다.')
+
+# print('게임을 설치 하시겠습니까?')
+# print()
+# 나이=float(input('나이를 적으세요:'))
+# if 나이>15:
+#     print('설치가 가능합니다')
+# if 나이<=15:
+#     print('설치가 불가능합니다.')
+
+# print("학교홈페이지에 오신 것을 환영합니다.")
+# print()
+# id=input('ID:')
+# pw=input('password:')
+# print()
+# if(id=='김코드')and(pw=='0110'):
+#     print('방문을 환영합니다.')
+# if(id!='김코드')and(pw!='0110'):
+#     print('아이디와 패스워드를 확인해주세요.')
+# elif id != '김코드':
+#     print('아이디를 확인하세요.')
+# elif pw != '0110':
+#     print('패스워드를 확인하세요.')
+
+# print('<정수 또는 실수인 두자리이상의 수를 입력하시오.>')
+# print()
+# 첫수=float(input('첫번째수를 입력하시오.:'))
+# 두수=float(input('두번째수를 입력하시오.:'))
+# 연산=input("어떤식을 사용하시겟습니까?(+,-,*,/):")
+# if 연산=='+':
+#     print(첫수+두수)
+# elif 연산=='-':
+#     print(첫수-두수)
+# elif 연산=='*':
+#     print(첫수*두수)
+# elif 연산=='/':
+#     print(round(첫수/두수,2))
+
+# print('쇼핑몰입니다.')
+# 성별=input('남자/여자:')
+# 종류=input('정장/캐주얼:')
+# if 성별=='남자':
+#     if 종류=='정장':
+#         print('3층 별관매장으로 가세요.')
+#     else:
+#         print('3층 본관매장으로 가세요.')
+# else:
+#     print('4층본관매장으로 가세요.')
+
+# mw=input('성별을 입력하세요. 남/여:')
+# tall=float(input('키를 입력하세요.'))
+# kg=float(input('몸무게를 입력하세요'))
+
+# if mw=='남':
+#     m=tall*tall*22
+#     m_standard=(kg-m)/m*100
+#     if m_standard <-10:
+#         print('저체중입니다.')
+#     elif -10< m_standard <10:
+#         print('정상체중 입니다.')
+#     elif 10<m_standard<20:
+#         print('과체중입니다.')
+#     elif 20<m_standard:
+#         print('비만입니다.')
+# if mw=='여':
+#     w=tall*tall*21
+#     w_standard=(kg-w)/w*100
+#     if w_standard < -10:
+#         print('저체중 입니다.')
+#     if -10<= w_standard <=10:
+#         print('정상체중 입니다.')
+#     if 10<=w_standard<=20:
+#         print('과체중입니다.')
+#     if 20<=w_standard:
+#         print('비만입니다.')
+
+import random
+ai=random.choice(['가위','바위','보'])
+print('10개의 계단이 있습니다.ai와 승리해 계단을 오르십시오.')
+hm=input('가위,바위,보:')
+if (ai=='가위') and (hm=='가위') or (ai=='바위') and (hm=='바위') or (ai=='보') and (hm=='보'):
+    print('인공지능이 %s를 냈습니다. 비겼습니다.'% ai)
+elif (ai=='가위') and (hm=='보')or(ai=='바위') and (hm=='가위')or(ai=='보') and (hm=='주먹'):
+    print('인공지능이 %s를 냈습니다. 졋겼습니다. 한칸 내려가니다.'% ai)
+elif (ai=='가위') and (hm=='주먹')or(ai=='주먹') and (hm=='보')or(ai=='보') and (hm=='가위'):
+    print('인공지능이 %s를 냇습니다. 이겼습니다. 2칸 올라가니다.'% ai)
+
+
+
+
+
+# for i in range(1,5):
+#     print('%d층입니다.'%i)
+
+# sum=0
+# for i in range(1,101):
+#     sum=sum+i
+# print('1부터 100까지의 합:%d'%sum)
+
+# num=int(input('당신이 입력한 수:'))
+# for i in range(1,):
+#     i=i
+# print('당신이 입력한 수의 약수는 %d입니다.:'%)
+
+# pw=int(input('비밀번호:'))
+# while pw != 1234:
+#     pw=int(input('다시 입력해 주세요.:'))
+# print('환영합니다.')
+
+# import time
+# i=1
+# while 1:
+#     print(i)
+#     i=i+1
+#     time.sleep(1)
+
+# total=10000
+# bus=0
+# subway=0
+# while True:
+#     trance=input('버스/지하철:')
+#     if trance==bus:
+#         bus=bus+1
+#         total=total-1200
+#         print('버스 요금은 1200원 입니다.')
+#         print('남은 금액은 %d입니다.'%(total))
+#     elif trance==subway:
+#         subway=subway+1
+#         total=total-1500
+#         print('지하철 요금은 1500원 입니다.')
+#         print('남은 금액은 %d입니다.'%(total))
+
+
+for i in range(1,11):
+    if i % 3==0:
+        continue
+    print(i)
+
+# i=0
+# while i<15:
+#     i=i+1
+#     if i>13:
+#         break
+#     print(i)
+
+# print('컴퓨터가 생가하는 1부터 100중의 숫자를 맞추세요.')
+# print('5번의 기회가 있습니다.')
+# import random
+# ai=random.randint(1,100)
+# score=0
+# while True:
+#     hm=int(input('숫자를 추측해보세요.:'))
+#     if ai<hm:
+#         print('그 숫자보다 작습니다.')
+#         score=score+1
+#         print('%d번'%(score))
+#     if ai>hm:
+#         print('그숫자보다 커야합니다.')
+#         score=score+1
+#         print('%d번'%(score))
+#     if ai==hm:
+#         print('%d번만에 맞추었습니다.'%(score))
+#     elif score==5:
+#         print('기회를 다쓰셨습니다.')
+#         print('ai가 생가한 숫자는 %d였습니다.'%ai)
+#         break
+
+
+
+
+# count=0
+# print('369게임을 시작합니다.')
+# print()
+# while True:
+#     count=count+1
+#     print(count)
+#     c=input()
+#     if count%10==3 or count%10==6 or count%10==9:
+#         if c=='':
+#             continue
+#         elif c==():
+#             print('아웃')
+#             break
+
+
+
+for i in range(21,48,3):
+    print('범위 내의 수:%d'%i)
+
+# sum = 0
+# for i in range(1,1000001):
+#     sum=sum+i
+# print('1부터 100까지의 합:%d'%sum)
+
+# num=int(input('당신이 입력한 수는:'))
+# for i in range(1,num+1):
+#     if num%i==0:
+#         print('입력한 수의 약수는 %d입니다'%num)
+
+# for i in range(2,10):
+#     print('[%d단입니다.]'%i)
+#     for j in range(1,10):
+#         print('%d * %d = %d'%(i,j,i*j))
+
+# sum=0
+# print('<입력한 수를 1부터 더해 드립니다.>')
+# num=int(input('1부터 더하고 싶은수:'))
+# for i in range(1,num+1):
+#     sum=sum+i
+# print('당신이 입력한 수를 1부터 더하면 %d입니다.'%sum)
+
+
+
+# def total(a,b):
+#     c=a+b
+#     return c
+# print(total(5,6))
+
+
+# def avg(title1,title2,title3):
+#     total=(title1+title2+title3)/3
+#     return total
+
+# num1=int(input('국어점수:'))
+# num2=int(input('수학점수:'))
+# num3=int(input('과학점수:'))
+
+# score=avg(num1,num2,num3)
+# print("입력한 과목의 평윤은:%d"%score)
+
+
+# def avg(cm1,cm2,cm3):
+#     total=(cm1*cm2*cm3)
+#     return total
+
+# m1=int(input('가로길이:'))
+# m2=int(input('세로길이:'))
+# m3=int(input('높이길이:'))
+
+# score=avg(m1,m2,m3)
+# print('입력하신 과목의 평균은:%d'%score)
+
+
+# def tall(m):
+#     if m>=120:
+#         return '탑승이 가능합니다.'
+#     elif m<120:
+#         return '탑승이 불가능합니다.'
+# stand=int(input('당신의 키:'))
+# print(tall(stand))
+
+
+# def ban(c):
+#     if c==1:
+#         return '1학년은 1층입니다.'
+#     elif c==2 :
+#         return '2학년은 1층입니다.'
+#     elif c==3:
+#         return '3학년은 2층입니다.'
+#     elif c==4:
+#         return '4학년은 2층입니다.'
+#     elif c==5:
+#         return '5학년은 3층입니다.'
+#     elif c==6:
+#         return '6학년은 3층입니다.'
+# stand=int(input('몇학년 인가요?:'))
+# print(ban(stand))
+
+
+# def sum(i,j):
+#     num=0
+#     for i in range(i,j+1):
+#         num+=i
+#     return num
+
+# print(sum(1,10))
+# print(sum(1,100))
+# print(sum(1,1000))
+
+
+# def sum(num):
+#     for i in range(1,10):
+#         print('%d*%d=%d'%(num,i,num*i))
+#     return
+# sum(int(input('알고싶은 구구단의 수:')))
+
+# import random
+# def ran():
+#     return random.randint(1,6)
+# print('주사위 %d가 나왔습니다.'%ran())
+
+# def star(p1,p2):
+#     print('저는 연예인 %s(와)과 %s(을)를 좋아합니다.'%(p1,p2))
+# star(김수현,전지현)
+# star(유재석,이효리)
+
+# a=1
+# def fun():
+#     a=10
+#     return a
+# print(fun())
+# print(a)
+
+# choice=input('(사이다/콜라/물):')
+# num=int(input('개수를 입력하세요:'))
+# def 음료수(drink,price):
+#     if drink=='사이다':
+#         print('사이다%d개,'%price, end='')
+#         return 1000*price
+#     elif drink=='콜라':
+#         print('콜라%d개,'%price, end='')
+#         return 1200*price
+#     elif drink=='물':
+#         print('물%d개,'%price, end='')
+#         return 500*price
+# print(str(음료수(choice,num))+'원 입니다.')
+
+
+# print('[메뉴')
+# print('핫도그:3000원')
+# print('라면:2500원')
+# print('햄버거:4500원')
+# print('콜라:1500원')
+# print('사이다:1500원')
+# choice=input('어떤음식을 주문하시겠습니까?(종료=x):')
+# num=int(input('몇개주문하시겠습니까?:'))
+# def 음식(food,price):
+#     if food =='핫도그':
+#         print('핫도그%d개,'%price, end='')
+#         return 3000*price
+
+#     elif food =='라면':
+#         print('라면%d개,'%price, end='')
+#         return 2500*price
+
+#     elif food =='햄버거':
+#         print('햄버거%d개,'%price, end='')
+#         return 4500*price
+
+#     elif food =='콜라':
+#         print('콜라%d개,'%price, end='')
+#         return 1500*price
+
+#     elif food =='사이다':
+#         print('사이다%d개,'%price, end='')
+#         return 1500*price
+
+#     elif food == 'x':
+#         print('주문을 취소합니다.')
+
+# print(str(음식(choice,num))+'원 입니다.')
+# print('(카드/현금)')
+# oo=input('어떤 결제방식을 사용하시겠습니까?:')
+# if oo == '카드':
+#     print('카드를 단말기에 꽂아 주십시오.')
+# elif oo == '현금':
+#    print('현금을 넣어주십시오.')
+   
+
+# def food(menu,num):
+#     if menu=='김치볶음밥':
+#         print('김치볶음밥 %d개 주문'%num)
+#         return 4000*num
+#     elif menu=='오므라이스':
+#         print('오므라이스 %d개 주문'%num)
+#         return 4500*num
+#     elif menu=='짜장면':
+#         print('짜장면 %d개 주문'%num)
+#         return 3500*num
+#     elif menu=='짬뽕':
+#         print('짬뽕 %d개 주문'%num)
+#         return 4000*num
+#     elif menu=='돈가스':
+#         print('돈가스 %d개 주문'%num)
+#         return 5000*num
+# total=0
+
+# while True:
+#     print('[메뉴]')
+#     print('김치볶음밥 : 4000원')
+#     print('오므라이스 : 4500원')
+#     print('짜장면 : 3500원')
+#     print('짬뽕 : 4000원')
+#     print('돈가스 : 5000원')
+#     choice = input('메뉴를 고르세요.(종료=X):')
+#     if choice == 'X':
+#         money=int(input('결제할 금액을 입력하세요.:'))
+#         break
+#     number = int(input('갯수:'))
+#     total = total + food(choice,number)
+# print('계산하실 금액은 %d원 입니다. 잔돈은 %d원입니다.'%(total,money-total))
+
+
+def food(menu,num):
+    if menu=='김치볶음밥':
+        print('김치볶음밥 %d개 주문'%num)
+        return 4000*num
+    elif menu=='오므라이스':
+        print('오므라이스 %d개 주문'%num)
+        return 4500*num
+    elif menu=='짜장면':
+        print('짜장면 %d개 주문'%num)
+        return 3500*num
+    elif menu=='짬뽕':
+        print('짬뽕 %d개 주문'%num)
+        return 4000*num
+    elif menu=='돈가스':
+        print('돈가스 %d개 주문'%num)
+        return 5000*num
+total=0
+
+while True:
+    print('[메뉴]')
+    print('김치볶음밥 : 4000원')
+    print('오므라이스 : 4500원')
+    print('짜장면 : 3500원')
+    print('짬뽕 : 4000원')
+    print('돈가스 : 5000원')
+    choice = input('메뉴를 고르세요.(종료=X):')
+    if choice == 'X':
+        money=int(input('결제할 금액을 입력하세요.:'))
+        break
+    number = int(input('갯수:'))
+    total = total + (choice,number)
+print('계산하실 금액은 %d원 입니다. 잔돈은 %d원입니다.'%(total,money-total))
+
+
+
+
+
+# score=int(input('점수를 입력하세요:'))
+
+# if score >= 90:
+#     grade='A'
+#     msg='장학금 100만원이 지급됩니다.'
+
+# elif score >= 80:
+#     grade='B'
+#     msg='장학급 50만원이 지급됩니다.'
+
+# elif score >= 70:
+#     grade='C'
+#     msg='장학급 대상이 아닙니다.'
+
+# elif score >= 60:
+#     grade='D'
+#     msg='장학금 대상이 아닙니다.'
+
+# else:
+#     grade='F'
+#     msg='낙제입니다 재수 하세요.'
+
+# print(grade+'학점입니다.')
+# print(msg)
+
+
+# num=int(input('정수를 입력하세요.'))
+# if num>0:
+#     print('양수입니다.')
+# elif num==0:
+#     print('0입니다.')
+# else:
+#     print('음수입니다.')
+
+
+# num=int(input('정수를 입력하세요.'))
+# if num%2==0:
+#     print('짝수입니다.')
+# elif num%2==1:
+#     print('홀수입니다.')
+
+
+# num1=int(input('첫째 숫자:'))
+# num2=int(input('둘째 숫자:'))
+# num3=int(input('셋째 숫자:'))
+# if (num1>=num2)and(num1>=num3):
+#     lar=num1
+# elif (num2>=num1)and(num2>=num3):
+#     lar=num2
+# else:
+#     lar=num3
+# print('제일 큰 숫자 = ',lar)
+
+
+# year=int(input('년도를 입력하세요:'))
+# if (year%4==0 and year%100!=0) or (year%400==0):
+#     print('윤년입니다.')
+# else:
+#     print('윤년이 아닙니다.')
+
+
+
+# voice=int(input('음성 통화 시(분)을 입력하세요.'))
+# messge=int(input('문자 전송 건수를 입력하세요'))
+# data=int(input('데이터 사용량(MB)을 입력 하세요.'))
+
+# V_over=voice-100
+# C_over = messge-200
+# d_over=data-300
+
+# if V_over<0:
+#     V_pay=0
+# elif V_over<=50:
+#     V_pay=V_over*60*1.56
+# elif V_over<=100:
+#     V_pay=V_over*60*1.25
+# else:
+#     V_pay=V_over*60*1.25
+
+# if C_over<0:
+#     C_pay=0
+# else:
+#     C_pay=C_over*20
+
+# if d_over<0:
+#     d_pay=0
+# else:
+#     d_pay=d_over*55
+
+# pay=V_pay + C_pay + d_pay + 30000
+# print('음성 통화 요금:',int(V_pay))
+# print('문자 전송 요금:',C_pay)
+# print('데이터 사용 요금:',d_pay)
+# print('이번달 통신 요금:',pay)
+
+
+
+age=int(input('나이를 입력 하세요.:'))
+초대권=input("초대권이 있나요?(Y,N):")
+if age<=5 and 초대권=='N':
+    print('입장료는 5000원입니다.')
+elif age<=5 and 초대권=='Y':
+    pay=5000*0.5
+    print('입장료는%d입니다'%pay)
+elif age<=13 and 초대권=='N':
+    print('입장료는 7000원입니다.')
+elif age<=13 and 초대권=='Y':
+    pay=7000*0.7
+    print('입장료는%d입니다'%pay)
+elif age<=20 and 초대권=='N':
+    print('입장료는 9000원입니다.')
+elif age<=20 and 초대권=='Y':
+    pay=9000*0.8
+    print('입장료는%d입니다'%pay)
+elif age>21 and 초대권=='N':
+    print('입장료는 10000원입니다.')
+elif age>21 and 초대권=='Y':
+    print('입장료는 10000원입니다.')
+
+
+
+# arr=[1,2,3,4]
+# print(arr)
+
+# b=[70,75,80,85]
+# print(b)
+
+# c=[1000,10000,'ACE','BACE',False]
+# print(c)
+
+# d = [30,40,[1,2,3],[4,5,6]]
+# print(d)
+
+# a.append(10,20,30)
+# print(a.append)
+
+# b.remove(70)
+# print(remove)
+
+# a=1
+# b=2
+# c=3
+# d=4
+# arr=[1,2,3,4]
+# print(arr)
+
+# arr = [1,2,3,4,5,6,7,8,9,10]
+# print(arr[6:8])
+
+# 번호=[1,2,3,4,5]
+# 이름=['김코딩','박로봇','이스쿨']
+
+# print(번호)
+# print(이름)
+# print(번호[0],이름[0])
+
+# 번호.append(6)
+# 이름.append('최코스')
+
+# print(번호,이름)
+
+
+# def ban(a):
+#     if a == 1:
+#         return '1학년은 1층입니다.'
+#     elif a == 2:
+#         return '2학년은 1층입니다.'
+#     elif a == 3:
+#         return '3학년은 2층입니다.'
+#     elif a == 4:
+#         return '4학년은 2층입니다.'
+#     elif a == 5:
+#         return '5학년은 3층입니다.'
+#     elif a == 6:
+#         return '6학년은 3층입니다.'
+# b=(int(input('몇학년입니까?:')))
+# print(ban(b))
+
+# 숫자1=[1,2,3,4,5,6]
+# 숫자2=[6,7,8,9,10]
+
+# 숫자1.remove(6)
+# print(숫자1)
+# print(숫자1+숫자2)
+
+# 참가자 = ['이스쿨','김코딩','박로봇']
+
+# 참가자.sort()
+# print(참가자)
+# 참가자.reverse()
+# print(참가자)
+
+# 이름 = ['차','자','아','사','바','마','라','다','나','가']
+# 번호 = ['1','2','3','4','5','6','7','8','9','10']
+# 이름.sort()
+
+# 번호 = ['1','2','3','4','5','6','7','8','9','10']
+# 이름= []
+
+# for i in range(0,10):
+#     이름.append(input('이름:'))
+
+# 이름.sort()
+# print()
+# print('[참가자명단]')
+# for i in range(0,10):
+#     print('%s번 %s'%(번호[i],이름[i]))
+
+
+
+
+# num = {1:'김코딩',2:'이스쿨',3:'박로봇'}
+# a={}
+# print(a)
+
+# b={'김코딩':30,'이스쿨':24}
+# print(b)
+
+# c=dict(name='김코딩',city='seoul')
+# print(c)
+
+# b=['김코딩']
+# print(b)
+
+# b.get=('이스쿨')
+# print(b.get)
+
+# c[name]='최코스'
+
+# inf = {
+# 'name':'김코딩',
+# 'city':'seoul',
+# 'age':30
+# }
+# print(inf['age'])
+
+# inf = dict(
+#     name = '김코딩',
+#     city = 'seoul',
+#     age = 30
+# )
+# print(inf['city'])
+
+# local = {1:'서울',2:'대전',3:'대구'}
+# local[4] = '광주'
+# print(local)
+
+# id = {'나이':25,'키':175,'몸무게':70}
+# del id['몸무게']
+# print(id)
+
+# temp = {'서울':29,'대전':30,'대구':32}
+# print(temp)
+# temp['대전']=29
+# print(temp)
+
+# stu = {'김코딩':'서울','박로봇':'대전'}
+# print(stu)
+# print('김코딩'in stu)
+# print('이스쿨'in stu)
+
+# id = {
+# 'Name':'김코딩',
+# 'City':'Seoul',
+# 'Age':30,
+# 'Grade':'A',
+# 'Phone':'010-1234-1234',
+# 'Status':True
+# }
+# print(id.keys())
+
+# print(id.values())
+
+# weather = {
+# '서울':'23도',
+# '대전':'24도',
+# '대구':'26도',
+# '부산':'24도',
+# '광주':'25도'
+# }
+# print('서울,대전,대구,부산,광주')
+# city=input('날씨를 알고싶은 도시를 쓰세요:')
+# for i in weather:
+#     if i in city:
+#         print (city + '는 현재'+ weather[city]+'입니다.')
+#         break
+# if i not in city:
+#         print('입력하신 도시의 정보는 없습니다.')
+
+# if i not in city:
+#         print('입력하신 도시의 정보는 없습니다.')
+
+
+
+# 도시={'서울':'대한민국 수도입니다',
+#         '광주':'정읍시 밑에 있습니다',
+#         '군산':'전라북도 전주옆에 있습니다',
+#         '세종':'청주시 밑에 있습니다.',
+#         '여수':'전라남도에 있습니다,'}
+# while True:
+#         이름=input('사용자의 이름을 설정해 주세요:')
+#         name=input('챗봇의 이름을 설정해주세요:')
+#         city=str(input('%s:위치를 알고싶은 도시를 쓰세요.'%name))
+#         print('%s:%s를 알고싶습니다.'%(이름,city))
+#         break
+# for i in 도시:
+#         if i in city:
+#                print (city + '은(는) 현재'+ 도시[city])
+#                break
+#         elif i not in city:
+#                 print('입력하신 도시의 정보는 없습니다.')
+#                 continue
+
+
+# human_name = input('당신의 이름은?')
+# bot_name = 'AI'
+# qna_dict = {
+# "안녕":"안녕하세요.^^",
+# "이름":"제 이은 AI 입니다.",
+# "기분":"저도 기분이 좋아요~!",
+# "음악":"저는 방탄소년단이 좋아요."
+# }
+
+# while True:
+#         talk=input("%s : "%human_name)
+#         for qna in qna_dict:
+#                 if qna in talk:
+#                         print("%s : %s\n" %(bot_name, qna_dict[qna]))
+#                         break
+#         if qna not in talk:
+#                 print('죄송해요. 답변을 준비하도록 할게요.\n')
+                # continue
+
+
+
+# bot=input('봇의 이름을 설정하여 주십시오.')
+# name=input('당신의 이름을 쓰시오.')
+# buy={
+# "냉장고":"냉장고 코너로 가시죠!",
+# "핸드폰":"핸드폰 코너로 가시죠!",
+# "티비":"티비 코너로 가시죠!",
+# "전자레인지":"전자레인지 코너로 가시죠"
+# }
+# As={
+# "냉장고":"냉장고 어디가 고장 났나요?",
+# "핸드폰":"핸드폰 어디가 고장났나요?",
+# "티비":"티비 어디가 고장났나요?",
+# "전자레인지":"전자레인지 어디가 고장인가요?"
+# }
+# 문의={
+# "냉장고":"냉장고의 어떤것이 궁금하신가요?",
+# "핸드폰":"핸드폰의 어떤것이 궁금하신가요?",
+# "티비":"티비의 어떤것이 궁금하신가요?",
+# "전자레인지":"전자레인지 어떤것이 궁금하신가요?"
+# }
+# 일=input('%s:무슨일로 오셨나요?(사러,As,문의):'%bot)
+# while True:
+#         talk=input("%s : "%name)
+#         for i in As:
+#                 if i in talk:
+#                         print("%s : %s" %(bot, As[i]))
+#                         break 
+#         for i in buy:
+#                 if i in talk:
+#                         print("%s : %s" %(bot, buy[i]))
+#                         break
+#         for i in 문의:
+#                 if i in talk:
+#                         print("%s : %s" %(bot, 문의[i]))
+#                         break 
+#         if i not in talk:
+#                 print('죄송합니다.그 제품은 없습니다^^.')
+#                 #continue
+
+
+
+# AI = 'SE'
+# human = input('당신의 이름:')
+# product_dict = {
+# '핸드폰':'핸드폰 안내입니다.\t구매/수리/문의',
+# '냉장고':'냉장고 안내입니다.\t구매/수리/문의',
+# 'TV':'TV안내입니다.\t구매/수리/문의',
+# }
+
+# qna_dict = {
+# '구매':'가까운 디지털 프라자를 입력하세요',
+# '수리':'증상을 메모해서 가까운 AS센터로 보내주세요.',
+# '문의':'상담원과 연결을 하겠습니다.'
+# }
+
+# while True:
+#         print('SE 입니다. 가전제품을 입력하세요.')
+#         talk1 = input('%s :'%human)
+#         for qna1 in product_dict:
+#                 if qna1 in talk1:
+#                         print('%s:%s'%(AI,product_dict[qna1]))
+#                         talk2 = input('%s:'%human)
+#                         for qna2 in qna_dict:
+#                                 if qna2 in talk2:
+#                                         print('%s:%s'%(AI,qna_dict[qna2]))
+#                                         break
+#                         if qna2 not in talk2:
+#                                 print('없는 질문입니다. 상담원으로 통해 답변 받으세요.')
+#                                 break
+#                 continue
+#         if qna1 not in talk1:
+#                 print('제품 분류를 다시 입력해 주세요.')
+#                 continue
+
+
+
+
+
+# import urllib.request
+# from bs4 import BeautifulSoup
+
+# url='https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=0&acr=8&acq=%EC%BD%94%EB%A1%9C%EB%82%98&qdt=0&ie=utf8&query=%EC%BD%94%EB%A1%9C%EB%82%98'
+# html=urllib.request.urlopen(url).read()
+# soup=BeautifulSoup(html,'html.parser')
+
+# print(soup)
+
+# import urllib.request
+# from bs4 import BeautifulSoup
+# url='https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=0&acr=8&acq=%EC%BD%94%EB%A1%9C%EB%82%98&qdt=0&ie=utf8&query=%EC%BD%94%EB%A1%9C%EB%82%98'
+# html=urllib.request.urlopen(url).read()
+# soup=BeautifulSoup(html,'html.parser')
+# title=soup.find_all(class_='코로나_tit')
+# print(title)
+
+
+
+# import urllib.request
+# import urllib.parse
+# from bs4 import BeautifulSoup
+
+# news_url='https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query='
+# search=input('기사 검색어:')
+# url=news_url + urllib.parse.quote_plus(search)
+# html=urllib.request.urlopen(url).read()
+
+# soup=BeautifulSoup(html,'html.parser')
+# title=soup.find_all(class_='news_tit')
+# for i in title:
+#     print(i.attrs['title'])
+#     print(i.attrs['href'])
+#     print()
+
+
+# from google_images_download import google_images_download
+# response = google_images_download.googleimagesdownload()
+# arguments = {
+#     'keywords':'코로나',
+#     'limit':5,
+#     'format':'png'}
+# paths = response.download(arguments)
+# print(paths)
+
+
+# from pickle import STOP
+# from tracemalloc import start, stop
+# import RPi.GPIO as GPIO
+# import time
+# SERVO_PIN = 20
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# TRIG = 23
+# ECHO = 24
+# print('Distance measurement in progress')
+# GPIO.setup(TRIG,GPIO.OUT)
+# GPIO.setup(ECHO,GPIO.IN)
+# GPIO.output(TRIG,False)
+# print('Waiting for sensor to settle')
+# time.sleep(2)
+# GPIO.setup(SERVO_PIN,GPIO.OUT)
+# servo = GPIO.PWM(SERVO_PIN,50)
+# servo.start(0)
+# try:
+#     while True:
+#         GPIO.output(TRIG,True)
+#         time.sleep(0.00001)
+#         GPIO.output(TRIG,False)
+
+#         while GPIO.input(ECHO)==0:
+#             start = time.time()
+#         while GPIO.input(ECHO)==1:
+#             stop = time.time()
+
+#         check_time = stop - start
+#         distance = check_time*34300/2
+#         print('Distance:%.1fcm'%distance)
+#         time.sleep(0.4)
+
+#         if distance <= 10:
+#             servo.ChangeDutyCycle(7.5)
+#         else:
+#             servo.ChangeDutyCycle(2.5)
+
+# except KeyboardInterrupt:
+#     print('Measurement stopped by User')
+#     servo.stop()
+#     GPIO.cleanup
+
+
+
+
+# try:
+#     while True:
+#         servo.ChangeDutyCycle(7.5)
+#         time.sleep(1)
+#         servo.ChangeDutyCycle(12.5)
+#         time.sleep(1)
+#         servo.ChangeDutyCycle(2.5)
+#         time.sleep(1)
+
+# except KeyboardInterrupt:
+#     servo.stop()
+#     GPIO.cleanup()
+
+
+# import RPi.GPIO as GPIO
+# import time
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# TRIG = 23
+# ECHO = 24
+# print('Distance measurement in progress')
+# GPIO.setup(TRIG,GPIO.OUT)
+# GPIO.setup(ECHO,GPIO.IN)
+# GPIO.output(TRIG,False)
+# print('Waiting for sensor to settle')
+# time.sleep(2)
+# try:
+#     GPIO.output(TRIG,True)
+#     time.sleep(0.00001)
+#     GPIO.output(TRIG,False)
+#     while GPIO.input(ECHO)==0:
+#         start=time.time()
+#     while GPIO.input(ECHO)==1:
+#         stop = time.time()
+#     check_time = stop-start
+#     distance = check_time*34300/2
+#     print('Distance:%.1fcm'%distance)
+#     time.sleep(0.4)
+# except KeyboardInterrupt:
+#     print('Measurement stopped by User')
+#     GPIO.cleanup()
+
+
+
+# import RPi.GPIO as GPIO
+# import time
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(18,GPIO.OUT)
+# p = GPIO.PWM(18,100)
+
+# Frq = [263,294,330,349,392,440,493,523]
+# speed = 0.5
+
+# p.start(10)
+
+# try:
+#     while 1:
+#         for fr in Frq:
+#             p.ChangeFrequency(fr)
+#             time.sleep(speed)
+# except KeyboardInterrupt:
+#     pass
+# p.stop()
+
+
+
+import RPi.GPIO as GPIO
+import time
+sensor = 4
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(sensor,GPIO.IN)
+
+print("PIR Ready....")
+time.sleep(1)
+
+try:
+    while True:
+        if GPIO.input(sensor)==1:
+            print("Motion Detected!")
+            time.sleep(1)
+
+        if GPIO.input(sensor)==0:
+            print("Clear!")
+            time.sleep(1)
+
+except KeyboardInterrupt:
+    print("Stopped by User")
+    GPIO.cleanup()
+
+
+# import RPi.GPIO as GPIO
+# import time
+# led_pin = 4
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(led_pin,GPIO.OUT)
+
+# for i in range(10):
+#     GPIO.output(led_pin,1)
+#     time.sleep(1)
+#     GPIO.output(led_pin,0)
+#     time.sleep(1)
+# GPIO.cleanup
+
+# import RPi.GPIO as GPIO
+# import time
+# button_pin = 20
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(button_pin,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# while 1:
+#     if GPIO.input(button_pin)==GPIO.HIGH:
+#         print('hello code_studio!')
+#     time.sleep(0.1)
+
+# import RPi.GPIO as GPIO
+# import time
+# button_pin1,button_pin2,button_pin3 = 20,21,16
+# led_red,led_orange,led_green = 23,25,12
+# GPIO.setwarnings(False)
+# GPIO.setmode(GPIO.BCM)
+# GPIO.setup(button_pin1,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# GPIO.setup(button_pin2,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# GPIO.setup(button_pin3,GPIO.IN,pull_up_down = GPIO.PUD_DOWN)
+# GPIO.setup(led_red,GPIO.OUT)
+# GPIO.setup(led_orange,GPIO.OUT)
+# GPIO.setup(led_green,GPIO.OUT)
+# while 1:
+#     if GPIO.input(button_pin3)==GPIO.HIGH:
+#         GPIO.output(led_red,1)
+
+#     elif GPIO.input(button_pin2)==GPIO.HIGH:
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,1)
+#         GPIO.output(led_green,0)
+
+#     elif GPIO.input(button_pin1)==GPIO.HIGH:
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,1)
+    
+#     else:
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,0)
+# GPIO.cleanup
+
+# while 1:
+#     if GPIO.input(button_pin)==GPIO.HIGH:
+#         print('PASS!')
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,1)
+#         GPIO.output(led_green,0)
+#         time.sleep(3)
+#         GPIO.output(led_red,0)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,1)
+#         time.sleep(10)
+#     else:
+#         print("Don't CROSS!")
+#         GPIO.output(led_red,1)
+#         GPIO.output(led_orange,0)
+#         GPIO.output(led_green,0)
+#         time.sleep(0.1)
+
+
+
+
+# text='코딩'
+# print(text)
+
+# 키=146
+# print(키)
+
+몸무게=56.4
+print(몸무게)
+
+# temp=-2.0
+# print(temp)
+
+# degree="30"
+# print(degree)
+
+# level=L3
+# print(level)
+
+# tall=175.2
+
+# t1=str(tall)
+# t2=int(tall)
+# t3=float(tall)
+
+# print(t1)
+# print(t2)
+# print(t3)
+
+
+# title=input("좋아하는 과목 :")
+# print(title+"을 좋아합니다.")
+
+
+# name=input('이름:')
+# age=input('나이:')
+# print()
+# title=input("★회원가입을 환영합니다♥")
+# print()
+# print('1.'+name)
+# print('2.'+age)
+
+
+# 가고싶은곳=input('가고싶은곳:')
+# 보고싶은것=input('보고싶은것:')
+# print()
+# title=input("◎가고싶은곳과 보고싶은것")
+# print()
+# title=input(''+가고싶은곳+'에 가서 '+보고싶은것+'을 보고싶습니다')
+
+
+# text='''아주 먼 옛날 숲 속에 일곱 난장이와 ★★공주님이 살고 있었습니다. 
+# ★★공주의 미모를 시기하던◆◆◆마법사가 독이 든 ■■를 먹여 ★★공주가 깊은 잠에 들엇습니다.
+# 깊은 잠에 빠진 ★★공주를 구하기위해 왕자가 숲 속에 찾아와 ★★공주에게 ●●하여 ★★공주가 깨어났고,행복하게 살았답니다. '''
+# text = text.replace('★★','백설')
+# text = text.replace('◆◆◆','나아쁜')
+# text = text.replace('■■','사과')
+# text = text.replace('●●','뽀뽀')
+# print(text)
+
+
+
+
+
+import time
+
+name = input('What is your name?')
+print('Hi,'+name,'Time to play hang man game!')
+print()
+time.sleep(1)
+
+print('Start Loading...')
+print()
+time.sleep(0.5)
+
+word='hello'
+guesses = ''
+turns=10
+
+while turns>0:
+    failed=0
+    for char in word:
+        if char in guesses:
+           print(char,end='')
+        else:
+           print('_ ',end='')
+           failed+=1
+    if failed==0:
+        print()
+        print()
+        print('Congratulations! The Guesses is correct')
+        break
+    print()
+    print()
+    guess=input('guess a character:')
+    guesses += guess
+
+    if guess not in word:
+        turns-=1
+        print('Ooops')
+        print('You have',turns,'more guesses!')
+
+        if turns==0:
+            print('You hangman game fails.Bye!')
+
+
+
+# import time
+# name=input('what is you name?:')
+# print('Hi'+name,'Time to play hangman game\n')
+# time.sleep(1)
+
+# print('start Loading...\n')
+# time.sleep(3)
+# word = 'secret'
+# guesses = ''
+
+# for char in word:
+#     print('_ ',end='')
+    
+
+# import face_recognition
+# import cv2
+# import numpy as np
+
+# imgShine = face_recognition.load_image_file("img/shinmina.jpg")
+# imgShin = cs2.cvtColor(imgShin,cv2.COLOR_BGR2RGB)
+
+
+
+import face_recognition
+import cv2
+import numpy as np
+import os
+
+path = 'images'
+images = []
+classNames = []
+myList = os.listdir(path)
+print(myList)
+for cl in mylist:
+    curlmg = cv2.imread(f'{path}/{cl}')
+    images.append(curlmg)
+    classNames.append(os.path.splitext(cl)[0])
+def findEncodings(images):
+    encodeList = []
+    for img in images:
+        img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+        encode = face_recognition.face_encodings(img)[0]
+        encodeList.append(encode)
+    return encodeList
+encodeListKnown = findEncodings(images)
+cap = cv2 = cv2.VideoCapture(0)
+while True:
+    success, img = cap.read()
+    imgS = cv2.resize(img,(0,0),None,0.25,0.25)
+    imgS = cv2.cvtColor(imgS,cv2.COLOR_BGR2RGB)
+
+    facesCurFrame = face_recognition.face_locations(imgS)
+    encodeCurFrame = face = face_recognition.face_encodings(imgS,facesCurFrame)
+
+
+
+
+    # import urllib.request
+# import urllib.parse
+# from bs4 import BeautifulSoup
+
+# news_url = 'https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query='
+# search = input("기사 검색어 : ")
+# url = news_url + urllib.parse.quote_plus(search)
+# html = urllib.request.urlopen(url).read()
+
+# soup = BeautifulSoup(html, 'html.parser')
+# title = soup.find_all(class_='news_tit')
+# #print(title)
+# for i in title:
+#     print(i.attrs['title'])
+#     print(i.attrs['href'])
+#     print()
+
+
+import requests
+r = requests.get
